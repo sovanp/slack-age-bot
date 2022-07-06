@@ -22,16 +22,16 @@ func printCommandEvents(analyticsChannel <-chan *slacker.CommandEvent) {
 }
 
 func main() {
-	os.Setenv("SLACK_BOT_TOKEN", "xoxb-3761425391125-3757818153862-bDmehkmFKHEkcHtiwuT5ZSU7")
-	os.Setenv("SLACK_APP_TOKEN", "xapp-1-A03N1NDG2MD-3777005728033-02cd12b512f7d0d87dae7e83d738abd2322042d1bff40193808b3f3a7581ec56")
+	os.Setenv("SLACK_BOT_TOKEN", "xoxb-3761425391125-3757818153862-NvQAz66Bu3zgE0zwjzIj70pp")
+	os.Setenv("SLACK_APP_TOKEN", "xapp-1-A03N1NDG2MD-3763304735669-e04e8ce2faaee07638b4e605cecc911dbac8e3f445fce00c2eb23fd02ef852fa")
 
 	bot := slacker.NewClient(os.Getenv("SLACK_BOT_TOKEN"), os.Getenv("SLACK_APP_TOKEN"))
 
 	go printCommandEvents(bot.CommandEvents())
 
-	bot.Command("my YOB is <year>", &slacker.CommandDefinition{
-		Description: "YOB calculator",
-		Example:     "My YOB is 2020",
+	bot.Command("my yob is <year>", &slacker.CommandDefinition{
+		Description: "yob calculator",
+		Example:     "my yob is 2020",
 		Handler: func(botCtx slacker.BotContext, request slacker.Request, response slacker.ResponseWriter) {
 			year := request.Param("year")
 			yob, err := strconv.Atoi(year)
