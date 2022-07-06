@@ -38,7 +38,7 @@ func main() {
 			if err != nil {
 				println("error")
 			}
-			age := 2021 - yob
+			age := 2022 - yob
 			r := fmt.Sprintf("age is %d", age)
 			response.Reply(r)
 		},
