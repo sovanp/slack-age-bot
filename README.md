@@ -10,7 +10,7 @@ A simple Slack Bot that calculates age, given the year of birth (yob).
 ## Setup
 1. Clone the repo ```git clone <repo>```
 
-2. Install dependencies ```go get "github.com/joho/godotenv"``` and ```go get "github.com/shomali11/slacker"``` in root directory
+2. Install dependencies ```go get "github.com/joho/godotenv"``` and ```go get "github.com/shomali11/slacker"```
 
 3. Visit https://api.slack.com/apps to configure Slack Bot 
 
