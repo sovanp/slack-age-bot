@@ -5,7 +5,7 @@ A simple Slack Bot that calculates age, given the year of birth (yob).
 ## How to Use
 1. Add the Slack Bot to your channel
 
-2. Type ```@age-bot my yob is <year>```
+2. Type ```@age-bot my dob is <YYYY-MM-DD>```
 
 ## Setup
 1. Clone the repo ```git clone <repo>```
