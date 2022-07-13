@@ -1,6 +1,6 @@
 # Slack Age Bot
 
-A simple Slack Bot that calculates age, given the year of birth (yob).
+A simple Slack Bot that calculates age, given the year of birth (dob).
 
 ## How to Use
 1. Add the Slack Bot to your channel
